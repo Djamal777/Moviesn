@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Популярные фильмы</string>
+    <string name="connection_error">Проблема с соединением!</string>
+    <string name="connection_problem">Проблемы с интернет-соединением!</string>
+    <string name="movie_info">О фильме</string>
+    <string name="date_released">Дата выхода: %1$s</string>
+    <string name="rating">Рейтинг: %1$s</string>
+    <string name="length">Продолжительность: %1$s минут</string>
+    <string name="budget">Бюджет: %1$s</string>
+    <string name="plus">Кассовые сборы: %1$s</string>
+    <string name="description">Описание: %1$s</string>
+</resources>

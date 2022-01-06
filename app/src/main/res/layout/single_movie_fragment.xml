@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.singlemoviedetails.SingleMovieFragment">
+
+    <include layout="@layout/toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/connection_problem"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_movie_poster"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:scaleType="matrix" />
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                tools:text="Фильм" />
+
+            <TextView
+                android:id="@+id/movie_tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Описание"
+                style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/movie_info"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+
+            <TextView
+                android:id="@+id/date_released"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/date_released"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Дата выхода:"
+                style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/rating"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Рейтинг:"
+                style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+            <TextView
+                android:id="@+id/lasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/length"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Продолжительность: "
+                style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+            <TextView
+                android:id="@+id/budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/budget"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Бюджет: "
+                style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+            <TextView
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/plus"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Кассовые сборы: "
+                style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/description"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Описание "
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
